@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+html {
+  width: 100%;
+  height: 100%;
+  background-color: #34455d;
+}
+
+
+
+@layer components {
+  .sidebar-icon {
+    @apply flex-shrink-0 w-6 h-6 z-20  transition duration-75 text-gray-400 group-hover:text-white
+  }
+
+  .sidebar-sidebar-header {
+    @apply flex items-center h-24 p-2 pl-4 z-10 relative text-base font-normal shadow-bottom text-gray-300 bg-gray-800
+  }
+
+  .sidebar-button {
+    @apply flex items-center p-2 z-20 text-base font-normal rounded-lg text-gray-300 hover:bg-gray-700
+  }
+
+  .sidebar-button-active {
+    @apply flex items-center p-2 z-20 text-base font-normal rounded-lg bg-gray-700 text-gray-300 hover:bg-gray-600
+  }
+
+  .grid-wrap {
+      @apply flex flex-wrap gap-4
+  }
+}
